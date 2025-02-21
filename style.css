@@ -1,0 +1,18 @@
+.nav {
+	height : 50px;
+	border-bottom : 1px solid black;
+	display : flex;
+	align-items : center;
+}
+
+.title{
+	text-aligin : center;
+	font-size : 50px;
+	font-weight : bold;
+}
+
+.subtitle{
+	text-aligin : center;
+	font-size : 20px;
+	font-weight : 300;
+}
