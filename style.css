@@ -16,39 +16,3 @@
 	font-size : 20px;
 	font-weight : 300;
 }
-
-/* 전체 컨테이너 중앙 정렬 */
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-}
-
-/* 원형 배치 컨테이너 */
-.circle-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-}
-
-/* 원형 아이템 스타일 */
-.item {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: #ff6b6b;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    color: white;
-    font-weight: bold;
-
-    /* 중심 정렬 */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
