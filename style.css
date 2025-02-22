@@ -16,3 +16,26 @@
 	font-size : 20px;
 	font-weight : 300;
 }
+
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px dashed #999;
+}
+
+.item {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    transform-origin: 50% 150px;
+}
