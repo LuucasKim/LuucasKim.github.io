@@ -17,6 +17,19 @@
 	font-weight : 300;
 }
 
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px dashed #999;
+    
+    /* 부모 기준으로 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .item {
     position: absolute;
     width: 40px;
