@@ -23,6 +23,11 @@
     height: 300px;
     border-radius: 50%;
     border: 2px dashed #999;
+    
+    /* 부모 기준으로 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item {
@@ -37,5 +42,9 @@
     font-size: 14px;
     color: white;
     font-weight: bold;
-    transform-origin: 50% 150px;
+
+    /* 원의 중심 기준 */
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0; /* 원의 중심이 기준 */
 }
