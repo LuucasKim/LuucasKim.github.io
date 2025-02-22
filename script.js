@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector('.circle-container');
     const totalItems = 24;
-    const radius = 200; // 원의 반지름
-    const angleStep = (2 * Math.PI) / totalItems; // 라디안 값으로 변환
+    const radius = 200; // 원의 반지름 조정
+    const angleStep = (2 * Math.PI) / totalItems;
 
     for (let i = 0; i < totalItems; i++) {
         const item = document.createElement('div');
