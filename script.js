@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector(".circle-container");
     const numItems = 24;
-    const radius = 120; // 원 반지름
+    const radius = 200; // 원 반지름
     const centerX = 150; // 컨테이너 중앙 X 좌표
     const centerY = 150; // 컨테이너 중앙 Y 좌표
 
