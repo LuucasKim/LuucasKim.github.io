@@ -19,20 +19,24 @@
 
 .circle-container {
 	position: relative;
-	width: 300px;
-	height: 300px;
+	width: 80vw;
+	height: 80vw;
+        max-width: 300px;
+        max-height: 300px;
 	margin: 50px auto;
 }
 
 .circle-item {
 	position: absolute;
-	width: 40px;
-	height: 40px;
+	width: 8vw;
+	height: 8vw;
+        max-width: 40px;
+        max-height: 40px;
 	background-color: lightblue;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 14px;
+	font-size: 3vw;
 	font-weight: bold;
 }
