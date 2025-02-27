@@ -1,0 +1,38 @@
+.nav {
+	height: 50px;
+	border-bottom: 1px solid black;
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.subtitle {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.circle-container {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 50px auto;
+}
+
+.circle-item {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: lightblue;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-weight: bold;
+}
