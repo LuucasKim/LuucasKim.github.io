@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const numItems = 24;
     const radius = 200; // 원 반지름
     const centerX = 150; // 컨테이너 중앙 X 좌표
-    const centerY = 50; // 컨테이너 중앙 Y 좌표
+    const centerY = 250; // 컨테이너 중앙 Y 좌표
 
     for (let i = 0; i < numItems; i++) {
         const angle = (i / numItems) * (2 * Math.PI) - Math.PI / 2; // -90도(맨 위 정렬)
