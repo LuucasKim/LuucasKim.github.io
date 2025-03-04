@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const screenSize = Math.max(Math.min(window.innerWidth * 0.5, window.innerHeight * 0.8), 250); 
         // 최소 250px, 최대 화면의 50% (가로) 또는 80% (세로)
 
-        const radius = screenSize / 2; // 반지름도 유동적으로 설정
+        const radius = screenSize / 3; // 반지름도 유동적으로 설정
         const centerX = screenSize / 2;
         const centerY = screenSize / 1.8;
         const itemSize = Math.max(screenSize / 10, 30); // 최소 크기 보장
