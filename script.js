@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const radius = screenSize / 3; // 반지름도 유동적으로 설정
         const centerX = screenSize / 2;
-        const centerY = screenSize / 1.8;
+        const centerY = screenSize / 2.5;
         const itemSize = Math.max(screenSize / 10, 30); // 최소 크기 보장
 
         for (let i = 0; i < numItems; i++) {
