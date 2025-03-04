@@ -19,22 +19,24 @@
 
 .circle-container {
     position: relative;
-    width: clamp(250px, 50vw, 80vh); /* 최소 250px, 최대 50vw 또는 80vh */
-    height: clamp(250px, 50vw, 80vh);
+    width: min(80vw, 80vh); /* 가로 또는 세로 중 작은 값 기준 */
+    height: min(80vw, 80vh);
+    max-width: 300px; /* 최대 크기 제한 */
+    max-height: 300px;
     margin: 50px auto;
 }
 
 .circle-item {
     position: absolute;
-    width: clamp(20px, 6vw, 8vh); /* 최소 30px, 최대 6vw 또는 8vh */
-    height: clamp(20px, 6vw, 8vh);
+    width: min(8vw, 8vh);  /* 요소 크기도 화면 비율에 맞게 조정 */
+    height: min(8vw, 8vh);
+    max-width: 40px;
+    max-height: 40px;
     background-color: lightblue;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(12px, 2vw, 3vh); /* 글자 크기도 조정 */
+    font-size: min(3vw, 3vh);  /* 폰트 크기도 조정 */
     font-weight: bold;
 }
-
-
