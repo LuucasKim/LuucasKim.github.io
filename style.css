@@ -26,8 +26,8 @@
 
 .circle-item {
     position: absolute;
-    width: clamp(30px, 6vw, 8vh); /* 최소 30px, 최대 6vw 또는 8vh */
-    height: clamp(30px, 6vw, 8vh);
+    width: clamp(20px, 6vw, 8vh); /* 최소 30px, 최대 6vw 또는 8vh */
+    height: clamp(20px, 6vw, 8vh);
     background-color: lightblue;
     border-radius: 50%;
     display: flex;
