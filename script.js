@@ -1,21 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const container = document.querySelector(".circle-container");
-    const numItems = 24;
-    const radius = 250; // 원 반지름
-    const centerX = 150; // 컨테이너 중앙 X 좌표
-    const centerY = 250; // 컨테이너 중앙 Y 좌표
+    function createCircleLayout() {
+        const container = document.querySelector(".circle-container");
+        container.innerHTML = ""; // 기존 요소 제거 후 다시 생성
 
-    for (let i = 0; i < numItems; i++) {
-        const angle = (i / numItems) * (2 * Math.PI) - Math.PI / 2; // -90도(맨 위 정렬)
-        const x = centerX + radius * Math.cos(angle) - 20; // X 위치 조정
-        const y = centerY + radius * Math.sin(angle) - 20; // Y 위치 조정
+        const numItems = 24;
+        const screenSize = Math.min(window.innerWidth * 0.8, window.innerHeight * 0.8, 300); // 가로/세로 중 작은 값 기준
+        const radius = screenSize / 2.5; // 반지름도 비율에 맞게 조정
+        const centerX = screenSize / 2;
+        const centerY = screenSize / 2;
+        const itemSize = screenSize / 10; // 원 개별 크기 조절
 
-        const item = document.createElement("div");
-        item.classList.add("circle-item");
-        item.style.left = `${x}px`;
-        item.style.top = `${y}px`;
-        item.textContent = i + 1; // 숫자 표시
+        for (let i = 0; i < numItems; i++) {
+            const angle = (i / numItems) * (2 * Math.PI) - Math.PI / 2;
+            const x = centerX + radius * Math.cos(angle) - itemSize / 2;
+            const y = centerY + radius * Math.sin(angle) - itemSize / 2;
 
-        container.appendChild(item);
+            const item = document.createElement("div");
+            item.classList.add("circle-item");
+            item.style.width = `${itemSize}px`;
+            item.style.height = `${itemSize}px`;
+            item.style.left = `${x}px`;
+            item.style.top = `${y}px`;
+            item.style.fontSize = `${itemSize / 2.5}px`; // 글씨 크기 조정
+            item.textContent = i + 1;
+
+            container.appendChild(item);
+        }
     }
+
+    createCircleLayout();
+    window.addEventListener("resize", createCircleLayout); // 창 크기 변경 시 다시 실행
 });
