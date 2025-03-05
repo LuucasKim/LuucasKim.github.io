@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         container.innerHTML = ""; // 기존 요소 제거 후 다시 생성
 
         const numItems = 24;
-        const screenSize;
+        let screenSize;
         if(window.innerWidth>window.innerHeight) {
             screenSize = Math.min(window.innerHeight * 0.8, 300); //가로가 긴 데스크탑은 높이 기준
         }
