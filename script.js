@@ -13,11 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
             centerY = screenSize / 1.5;
         }
         else {
-            screenSize = Math.min(window.innerWidth * 0.8, 300); //세로가 긴 모바일은 너비 기준
+            screenSize = Math.min(window.innerWidth * 0.8, 400); //세로가 긴 모바일은 너비 기준
             centerX = screenSize / 2;
             centerY = screenSize / 1.5;
         }
-        console.log(screenSize);
+        console.log(screenSize, centerX, centerY);
+        
         const radius = screenSize / 2; // 반지름도 비율에 맞게 조정
         const itemSize = screenSize / 9; // 원 개별 크기 조절
 
