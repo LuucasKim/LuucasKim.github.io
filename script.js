@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let centerY;
         if(window.innerWidth>window.innerHeight) {
             screenSize = Math.min(window.innerHeight * 0.5); //가로가 긴 데스크탑은 높이 기준
-            centerX = window.innerHight / 6;
+            centerX = window.innerWight / 6;
             centerY = screenSize / 1.5;
         }
         else {
