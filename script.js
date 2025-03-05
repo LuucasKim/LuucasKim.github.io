@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
         container.innerHTML = ""; // 기존 요소 제거 후 다시 생성
 
         const numItems = 24;
-        const screenSize = Math.min(window.innerWidth * 0.8, window.innerHeight * 0.8, 300); // 가로/세로 중 작은 값 기준
+        const screenSize = Math.min(window.innerWidth * 0.8, window.innerHeight * 0.8); // 가로/세로 중 작은 값 기준
         const radius = screenSize / 2; // 반지름도 비율에 맞게 조정
         const centerX = screenSize / 2;
         const centerY = screenSize / 1.5;
-        const itemSize = screenSize / 10; // 원 개별 크기 조절
+        const itemSize = screenSize / 9; // 원 개별 크기 조절
 
         for (let i = 0; i < numItems; i++) {
             const angle = (i / numItems) * (2 * Math.PI) - Math.PI / 2;
