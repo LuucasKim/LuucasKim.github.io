@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const numItems = 24;
         let screenSize;
         if(window.innerWidth>window.innerHeight) {
-            screenSize = Math.min(window.innerHeight * 0.8, 400); //가로가 긴 데스크탑은 높이 기준
+            screenSize = Math.min(window.innerHeight * 0.8, 300); //가로가 긴 데스크탑은 높이 기준
         }
         else {
             screenSize = Math.min(window.innerWidth * 0.8, 300); //세로가 긴 모바일은 너비 기준
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         const radius = screenSize / 2; // 반지름도 비율에 맞게 조정
         const centerX = screenSize / 2;
-        const centerY = screenSize / 2;
+        const centerY = screenSize / 1.5;
         const itemSize = screenSize / 9; // 원 개별 크기 조절
 
         for (let i = 0; i < numItems; i++) {
