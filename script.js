@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let centerY;
         if(window.innerWidth>window.innerHeight) {
             screenSize = Math.min(window.innerHeight * 0.5); //가로가 긴 데스크탑은 높이 기준
-            centerX = screenSize / 2;
+            centerX = window.innerHight / 6;
             centerY = screenSize / 1.5;
         }
         else {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             centerX = screenSize / 2;
             centerY = screenSize / 1.5;
         }
-        console.log(window.innerWidth, window.innerHeight, screenSize, centerX, centerY);
+        console.log(screenSize, centerX, centerY);
         
         const radius = screenSize / 2; // 반지름도 비율에 맞게 조정
         const itemSize = screenSize / 9; // 원 개별 크기 조절
