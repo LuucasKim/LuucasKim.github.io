@@ -4,7 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
         container.innerHTML = ""; // 기존 요소 제거 후 다시 생성
 
         const numItems = 24;
-        const screenSize = Math.min(window.innerWidth * 0.8, window.innerHeight * 0.8, 300); // 가로/세로 중 작은 값 기준
+        if(window.innerWidth>window.innerHeight) {
+            const screenSize = Math.min(window.innerHeight * 0.8, 300); //가로가 긴 데스크탑은 높이 기준
+        }
+        else {
+            const screenSize = Math.min(window.innerWidth * 0.8, 300); //세로가 긴 모바일은 너비 기준
+        }
+        
         const radius = screenSize / 2; // 반지름도 비율에 맞게 조정
         const centerX = screenSize / 2;
         const centerY = screenSize / 1.5;
