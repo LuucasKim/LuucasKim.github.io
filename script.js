@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         else {
             screenSize = Math.min(window.screen.width * 0.8, 300); //세로가 긴 모바일은 너비 기준
         }
-        
+        console.log(screenSize);
         const radius = screenSize / 2; // 반지름도 비율에 맞게 조정
         const centerX = screenSize / 2;
         const centerY = screenSize / 1.5;
