@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         console.log(screenSize);
         const radius = screenSize / 2; // 반지름도 비율에 맞게 조정
-        const centerX = screenSize / 2;
+        const centerX = window.innerWidth / 2;
         const centerY = screenSize / 1.5;
         const itemSize = screenSize / 9; // 원 개별 크기 조절
 
